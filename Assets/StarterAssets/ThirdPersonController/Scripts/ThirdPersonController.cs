@@ -91,6 +91,8 @@ namespace StarterAssets
 
 		private bool _hasAnimator;
 
+		private bool isGravityZero;
+
 		private void Awake()
 		{
 			// get a reference to our main camera
@@ -111,6 +113,8 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+			isGravityZero = false;
 		}
 
 		private void Update()
@@ -250,8 +254,16 @@ namespace StarterAssets
 				// Jump
 				if (_input.jump && _jumpTimeoutDelta <= 0.0f)
 				{
-					// the square root of H * -2 * G = how much velocity needed to reach desired height
-					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					//If gravity is 0, still apply a jump force
+					if(Gravity == 0)
+					{
+						_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * -15);
+					}
+					else
+					{
+						// the square root of H * -2 * G = how much velocity needed to reach desired height
+						_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					}
 
 					// update animator if using character
 					if (_hasAnimator)
@@ -293,6 +305,21 @@ namespace StarterAssets
 			if (_verticalVelocity < _terminalVelocity)
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
+			}
+
+			// Press G to toggle gravity on and off
+			if(Input.GetKeyDown(KeyCode.G))
+			{
+				if(isGravityZero == true)
+				{
+					Gravity = -15;
+					isGravityZero = false;
+				}
+				else
+				{
+					Gravity = 0;
+					isGravityZero = true;
+				}
 			}
 		}
 
