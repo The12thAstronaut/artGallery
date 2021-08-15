@@ -2150,8 +2150,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: CreateRoom
         m_Mode: 1
         m_Arguments:
@@ -2847,8 +2847,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: JoinLobbyonClick
         m_Mode: 1
         m_Arguments:
@@ -3438,7 +3438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -37.5}
+  m_AnchoredPosition: {x: 0, y: -92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895470712
@@ -3506,7 +3506,7 @@ MonoBehaviour:
       - m_Target: {fileID: 390055315}
         m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnUsernameChanged
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3536,7 +3536,7 @@ MonoBehaviour:
       - m_Target: {fileID: 390055315}
         m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnUsernameChanged
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3635,7 +3635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5.5}
+  m_AnchoredPosition: {x: 0, y: -2}
   m_SizeDelta: {x: 220, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902230844
@@ -4426,8 +4426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -220, y: -60}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchoredPosition: {x: -314, y: -60}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1231449126
 MonoBehaviour:
@@ -4705,7 +4705,7 @@ MonoBehaviour:
       - m_Target: {fileID: 390055315}
         m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomSizeChanged
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4735,7 +4735,7 @@ MonoBehaviour:
       - m_Target: {fileID: 390055315}
         m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomSizeChanged
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5428,7 +5428,7 @@ MonoBehaviour:
       - m_Target: {fileID: 390055315}
         m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomNameChanged
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5458,7 +5458,7 @@ MonoBehaviour:
       - m_Target: {fileID: 390055315}
         m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomNameChanged
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5649,9 +5649,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1537179644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c570c6ce00f84f445915009fac29e7f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 13bc6eb4d09b123438b1960f6e281d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  definedButton: {fileID: 0}
+  otherButton: {fileID: 1856039266}
+  VoiceRecorder: {fileID: 0}
+  canvasRaycaster: {fileID: 1882148054}
+  screenPoint: {x: 0, y: 0}
 --- !u!114 &1537179647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6547,9 +6552,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1856039266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c570c6ce00f84f445915009fac29e7f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 13bc6eb4d09b123438b1960f6e281d2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  definedButton: {fileID: 0}
+  otherButton: {fileID: 1537179644}
+  VoiceRecorder: {fileID: 0}
+  canvasRaycaster: {fileID: 1882148054}
+  screenPoint: {x: 0, y: 0}
 --- !u!114 &1856039269
 MonoBehaviour:
   m_ObjectHideFlags: 0
