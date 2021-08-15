@@ -48,8 +48,8 @@ public class PhotonLobby : MonoBehaviourPunCallbacks, ILobbyCallbacks {
 	
 	//Callback function
 	public override void OnConnectedToMaster(){
-		Debug.Log("User has connected to the SUITS master server.");
-		StatusLabel.text = ("This device has connected to the SUITS master server.");
+		Debug.Log("This device is connected to the photon multiuser server.");
+		StatusLabel.text = ("This device is connected to the photon multiuser server.");
 
         //Set my nickname based on number
         PhotonNetwork.NickName = "User " + Random.Range(0, 1000);

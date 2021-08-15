@@ -318,6 +318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VoiceRecorder: {fileID: 1588980925}
+  MutedIcon: {fileID: 0}
+  UnmutedIcon: {fileID: 0}
 --- !u!1 &73048165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3501,10 +3503,10 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnUsernameChanged
-        m_Mode: 0
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3531,10 +3533,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnUsernameChanged
-        m_Mode: 0
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4700,10 +4702,10 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomSizeChanged
-        m_Mode: 0
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4730,10 +4732,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomSizeChanged
-        m_Mode: 0
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5423,10 +5425,10 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomNameChanged
-        m_Mode: 0
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5453,10 +5455,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 390055315}
+        m_TargetAssemblyTypeName: PhotonLobby, Assembly-CSharp
         m_MethodName: OnRoomNameChanged
-        m_Mode: 0
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6037,7 +6039,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac041bda5a5a474cb3a207338b9a99f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VoiceRecorder: {fileID: 0}
+  VoiceRecorder: {fileID: 1588980925}
+  MutedIcon: {fileID: 1537179644}
+  UnmutedIcon: {fileID: 1856039266}
 --- !u!114 &1588980925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6056,7 +6060,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: 
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0
