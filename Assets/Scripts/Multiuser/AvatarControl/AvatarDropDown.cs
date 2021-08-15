@@ -6,11 +6,11 @@ using TMPro;
 public class AvatarDropDown : MonoBehaviour
 {
     List<string> labels = new List<string>() {
-    "Please Select",
-    "Robot",
-    "Llama",
+    "Astronaut",
     "Duck",
-    "Shiba"
+    "Llama",
+    "Shiba",
+    "Robot"
     };
 
     public TMP_Dropdown dropdown;
