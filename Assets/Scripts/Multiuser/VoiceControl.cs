@@ -13,29 +13,29 @@ public class VoiceControl : MonoBehaviour
     // Print state of voice recorder
     void Start()
     {
-        VoiceRecorder.TransmitEnabled = false;       //Muted state by default
+        VoiceRecorder.TransmitEnabled = true;       //Transmit state by default
         Debug.Log("Recorder state = " + VoiceRecorder.TransmitEnabled);
-        // MutedIcon = GameObject.Find("MutedIcon");
-        // UnmutedIcon = GameObject.Find("UnmutedIcon");
+        MutedIcon = GameObject.Find("MutedIcon");
+        UnmutedIcon = GameObject.Find("UnmutedIcon");
         muteIconUpdate(VoiceRecorder.TransmitEnabled);
     }
 
     void Update()
     {
-        // //Find GameObjects if they were lost on level change
-        // if (MutedIcon == null)
-        // {
-        //     // MutedIcon = GameObject.Find("MutedIcon");
-        //     muteIconUpdate(VoiceRecorder.TransmitEnabled);
-        //     Debug.Log("Found MutedIcon");
-        // }
-        // if (UnmutedIcon == null)
-        // {
-        // // UnmutedIcon = GameObject.Find("UnmutedIcon");
-        // VoiceRecorder.TransmitEnabled = true;           //Unmute upon level load
-        // muteIconUpdate(VoiceRecorder.TransmitEnabled);
-        // Debug.Log("Found UnmutedIcon");
-        // }
+        //Find GameObjects if they were lost on level change
+        if (MutedIcon == null)
+        {
+            // MutedIcon = GameObject.Find("MutedIcon");
+            muteIconUpdate(VoiceRecorder.TransmitEnabled);
+            Debug.Log("Found MutedIcon");
+        }
+        if (UnmutedIcon == null)
+        {
+        // UnmutedIcon = GameObject.Find("UnmutedIcon");
+        VoiceRecorder.TransmitEnabled = true;           //Unmute upon level load
+        muteIconUpdate(VoiceRecorder.TransmitEnabled);
+        Debug.Log("Found UnmutedIcon");
+        }
 
         //If the M key is pressed, toggle between mute and unmute icons, and change transmit state
         if (Input.GetKeyDown(KeyCode.M))

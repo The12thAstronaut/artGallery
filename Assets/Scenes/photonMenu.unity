@@ -5795,11 +5795,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588980923}
-  - component: {fileID: 1588980924}
   - component: {fileID: 1588980925}
   - component: {fileID: 1588980926}
   m_Layer: 0
-  m_Name: VoiceController
+  m_Name: Voice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5819,21 +5818,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1588980924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588980922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac041bda5a5a474cb3a207338b9a99f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VoiceRecorder: {fileID: 1588980925}
-  MutedIcon: {fileID: 1537179644}
-  UnmutedIcon: {fileID: 1856039266}
 --- !u!114 &1588980925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5852,7 +5836,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: 
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0
@@ -5883,7 +5867,7 @@ MonoBehaviour:
   useOnAudioFilterRead: 0
   trySamplingRateMatch: 0
   useMicrophoneTypeFallback: 1
-  recordOnlyWhenJoined: 1
+  recordOnlyWhenJoined: 0
 --- !u!114 &1588980926
 MonoBehaviour:
   m_ObjectHideFlags: 0
