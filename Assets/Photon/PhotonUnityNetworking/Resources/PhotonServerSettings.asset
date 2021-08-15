@@ -15,8 +15,8 @@ MonoBehaviour:
   AppSettings:
     AppIdRealtime: 53769a85-1226-4ad4-b5af-578d4257c3f0
     AppIdFusion: 
-    AppIdChat: 
-    AppIdVoice: 
+    AppIdChat: d8dfef11-c2e6-4d23-a445-9d19268bd55b
+    AppIdVoice: e870bfcb-ce59-4e72-a349-e273326f2994
     AppVersion: 
     UseNameServer: 1
     FixedRegion: 
@@ -44,6 +44,11 @@ MonoBehaviour:
   - CantHearYou
   - ChangeColour
   - HeresWhy
+  - RPC_AddCharacter
+  - RPC_AddUsername
+  - RPC_Laser_Arrow
+  - RPC_Laser_Object
+  - SplineDraw
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1
