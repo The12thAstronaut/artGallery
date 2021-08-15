@@ -6586,7 +6586,6 @@ GameObject:
   - component: {fileID: 1882176119}
   - component: {fileID: 1882176118}
   - component: {fileID: 1882176117}
-  - component: {fileID: 1882176116}
   m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
@@ -6614,18 +6613,6 @@ RectTransform:
   m_AnchoredPosition: {x: -92, y: 29}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1882176116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882176114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dafd9900b6e6d1140808d557bf447c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1882176117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6670,8 +6657,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1882176116}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1525395138}
+        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
         m_MethodName: doExitGame
         m_Mode: 1
         m_Arguments:
