@@ -257,6 +257,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15912667}
   m_CullTransparentMesh: 0
+--- !u!1 &28996860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28996862}
+  - component: {fileID: 28996861}
+  m_Layer: 0
+  m_Name: MultiuserSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &28996861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28996860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364007335c93f894982f89ccc2d895a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayStart: 0
+  maxUsers: 0
+  menuScene: 0
+  multiUserScene: 0
+--- !u!4 &28996862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28996860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 492.3691, y: 464.73288, z: -434.23938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &73048165
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +666,7 @@ RectTransform:
   - {fileID: 1442093776}
   - {fileID: 1882176115}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -847,7 +894,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251013282
 GameObject:
@@ -1236,10 +1283,10 @@ MonoBehaviour:
   roomName: 
   roomSize: 0
   usernameString: 
-  roomListingPrefab: {fileID: 0}
-  roomsPanel: {fileID: 0}
-  roomLabel: {fileID: 0}
-  StatusLabel: {fileID: 0}
+  roomListingPrefab: {fileID: 8290034770719593622, guid: 9713b1e498be8374497923aa984a9bdd, type: 3}
+  roomsPanel: {fileID: 801221671}
+  roomLabel: {fileID: 902230844}
+  StatusLabel: {fileID: 1231449126}
   regionLabel: {fileID: 0}
 --- !u!4 &390055316
 Transform:
@@ -1253,7 +1300,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390121119
 GameObject:
@@ -2307,7 +2354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &634332469
 GameObject:
@@ -2656,7 +2703,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &682357547
 GameObject:
@@ -2885,7 +2932,7 @@ Transform:
   m_LocalScale: {x: 75.238434, y: 17.401, z: 33.958637}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -270, y: -90.00001, z: 90.00001}
 --- !u!1 &705441591
 GameObject:
@@ -3143,6 +3190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 841000572}
+  - component: {fileID: 841000573}
   m_Layer: 0
   m_Name: RoomController
   m_TagString: Untagged
@@ -3162,8 +3210,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &841000573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841000571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e37551c56e80347862132c23e8167d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSimLoaded: 0
+  currentScene: 0
+  usersInRoom: 0
+  myNumberInRoom: 0
+  usersInSim: 0
+  startingTime: 0
+  lobbyGO: {fileID: 1551653849}
+  roomGO: {fileID: 1442093775}
+  usersPanel: {fileID: 951928081}
+  userListingPrefab: {fileID: 3807947724551888445, guid: bc732837490807241906b33966a6a30e, type: 3}
+  startButton: {fileID: 998078338}
 --- !u!1 &854472558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,7 +4969,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1392248827
 MonoBehaviour:
@@ -5457,7 +5528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537179644
 GameObject:
@@ -5860,6 +5931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588980923}
+  - component: {fileID: 1588980924}
   m_Layer: 0
   m_Name: VoiceController
   m_TagString: Untagged
@@ -5879,8 +5951,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1588980924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588980922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac041bda5a5a474cb3a207338b9a99f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VoiceRecorder: {fileID: 0}
 --- !u!1 &1635203282
 GameObject:
   m_ObjectHideFlags: 0
@@ -6506,7 +6591,7 @@ RectTransform:
   - {fileID: 2060170512}
   - {fileID: 73048166}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
