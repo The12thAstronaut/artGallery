@@ -28,6 +28,9 @@ public class AvatarMovement : MonoBehaviour
     private Camera avatarCamera;
     private float viewRange = 85.0f;   //Limit to pitching up and down of camera to 85 degrees above or below horizon
 
+    private float rotX = 0;
+    private float rotY = 0;
+
     // Start is called before the first frame update
     void Start() {
         PV = GetComponent<PhotonView>();
@@ -97,12 +100,23 @@ public class AvatarMovement : MonoBehaviour
     }
 
     void BasicRotation(){
-        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime* 2 * rotationSpeed;
-        transform.Rotate (new Vector3(0, mouseX, 0));
-        float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * 4 * rotationSpeed;
+        // float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime* 2 * rotationSpeed;
+        // transform.Rotate (new Vector3(0, mouseX, 0));
+        // float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * 4 * rotationSpeed;
 
-        //Rotate Pitch of Avatar Camera
-        avatarCamera.transform.Rotate (new Vector3(-mouseY, 0, 0));
+        // //Rotate Pitch of Avatar Camera
+        // avatarCamera.transform.Rotate (new Vector3(-mouseY, 0, 0));
+
+        //now for the mouse rotation
+        rotX += Input.GetAxis("Mouse X")* Time.deltaTime* 2 * rotationSpeed;
+        rotY += Input.GetAxis ("Mouse Y")* Time.deltaTime * 4 * rotationSpeed;
+ 
+        //Limit pitching of camera
+        rotY = Mathf.Clamp(rotY, -viewRange, viewRange);      
+        
+        //Rotate camera pitch and yaw
+        avatarCamera.transform.localRotation = Quaternion.Euler(-rotY, 0f, 0f);
+        transform.rotation = Quaternion.Euler(0f, rotX, 0f);
 
         // Create angle Vector to easily read euler Angle values without gimbal lock
         Vector3 angle = avatarCamera.transform.eulerAngles;
@@ -145,20 +159,20 @@ public class AvatarMovement : MonoBehaviour
 
         //    Debug.Log(angle + " :::: " + Mathf.Round(x) + " , " + Mathf.Round(y) + " , " + Mathf.Round(z));
 
-        // //Check if pitch is too high and rotate opposite direction
-        if (Mathf.Round(x) > viewRange)
-        {
-           avatarCamera.transform.Rotate (new Vector3(mouseY, 0, 0));
-           Debug.Log("Min Camera Pitch Reached!");
-        //    Debug.Log(angle + " :::: " + Mathf.Round(x) + " , " + Mathf.Round(y) + " , " + Mathf.Round(z));
-        }
-        // //Check if pitch is too low and rotate opposite direction
-        if (Mathf.Round(x) < -viewRange)
-        {
-           avatarCamera.transform.Rotate (new Vector3(mouseY, 0, 0));
-            Debug.Log("Max Camera Pitch Reached!");
-        //    Debug.Log(angle + " :::: " + Mathf.Round(x) + " , " + Mathf.Round(y) + " , " + Mathf.Round(z));
-        }
+        // // //Check if pitch is too high and rotate opposite direction
+        // if (Mathf.Round(x) > viewRange)
+        // {
+        //    avatarCamera.transform.Rotate (new Vector3(mouseY, 0, 0));
+        //    Debug.Log("Min Camera Pitch Reached!");
+        // //    Debug.Log(angle + " :::: " + Mathf.Round(x) + " , " + Mathf.Round(y) + " , " + Mathf.Round(z));
+        // }
+        // // //Check if pitch is too low and rotate opposite direction
+        // if (Mathf.Round(x) < -viewRange)
+        // {
+        //    avatarCamera.transform.Rotate (new Vector3(mouseY, 0, 0));
+        //     Debug.Log("Max Camera Pitch Reached!");
+        // //    Debug.Log(angle + " :::: " + Mathf.Round(x) + " , " + Mathf.Round(y) + " , " + Mathf.Round(z));
+        // }
 
     }
 

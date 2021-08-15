@@ -29,6 +29,10 @@ public class UserInfo : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
+
+        // Set default character to 0
+        mySelectedCharacter = 0;
+        
         //Check to see if a player preference exists, and set character to selection
         if(PlayerPrefs.HasKey("MyCharacter")){
             mySelectedCharacter = PlayerPrefs.GetInt("MyCharacter");

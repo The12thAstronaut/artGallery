@@ -8,9 +8,7 @@ public class AvatarDropDown : MonoBehaviour
     List<string> labels = new List<string>() {
     "Astronaut",
     "Duck",
-    "Llama",
-    "Shiba",
-    "Robot"
+    "Llama"
     };
 
     public TMP_Dropdown dropdown;

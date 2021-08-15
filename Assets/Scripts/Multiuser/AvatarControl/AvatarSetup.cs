@@ -26,9 +26,7 @@ public class AvatarSetup : MonoBehaviour {
     string[] labels = {
     "WhiteAvatar",
     "DuckAvatar",
-    "RedAvatar",
-    "BlueAvatar",
-    "WhiteAvatar"
+    "LlamaAvatar"
     };
 
     // Start is called before the first frame update
