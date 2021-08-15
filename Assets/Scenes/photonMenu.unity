@@ -2763,7 +2763,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mySelectedCharacter: 0
-  allCharacters: []
+  allCharacters:
+  - {fileID: 2943028198969941813, guid: 9d10ffe798248804389275ea31f09fab, type: 3}
+  - {fileID: 125, guid: 98d08ef1566edc845bd6bd3cc5b7a5bf, type: 3}
+  - {fileID: 224, guid: 665c46285a66e0b4c959fc0e3b7834d9, type: 3}
+  - {fileID: 124, guid: c0aa315423bf75346be8485c62d29bbd, type: 3}
+  - {fileID: 2943028198969941813, guid: 9d10ffe798248804389275ea31f09fab, type: 3}
 --- !u!1 &682357547
 GameObject:
   m_ObjectHideFlags: 0

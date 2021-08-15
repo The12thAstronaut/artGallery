@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1825.8018, g: 1895.6953, b: 2752.293, a: 1}
+  m_IndirectSpecularColor: {r: 1825.8252, g: 1895.6836, b: 2752.2812, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23871,6 +23871,70 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &739918129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739918130}
+  - component: {fileID: 739918131}
+  m_Layer: 0
+  m_Name: SimSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &739918130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739918129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 803562729}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &739918131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739918129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6c9960d3cab464da019dea16feabd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 1782359288}
+  - {fileID: 928569444}
+  - {fileID: 1043820248}
+  - {fileID: 1435179691}
+  - {fileID: 1126467649}
+  - {fileID: 67138755}
+  - {fileID: 327089016}
+  - {fileID: 875723889}
+  - {fileID: 445061951}
+  - {fileID: 986606979}
+  - {fileID: 1231309021}
+  - {fileID: 353252986}
+  - {fileID: 722350461}
+  - {fileID: 1789441416}
+  - {fileID: 1392668211}
+  - {fileID: 1571459243}
+  - {fileID: 239583541}
+  - {fileID: 874883865}
+  - {fileID: 1862442235}
+  - {fileID: 713067577}
 --- !u!1 &787232924
 GameObject:
   m_ObjectHideFlags: 0
@@ -24348,6 +24412,37 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &803562728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803562729}
+  m_Layer: 0
+  m_Name: Multiuser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &803562729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803562728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -44.16909, y: 6.403715, z: -18.575657}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 739918130}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &805564586
 Mesh:
   m_ObjectHideFlags: 0
@@ -32094,7 +32189,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-66934
+  m_Name: pb_Mesh-86202
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40400,7 +40495,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8895638922877278917, guid: b769070042b779047a5a18986798bed0, type: 3}
       propertyPath: m_Name
-      value: SpawnBase (20)
+      value: Teleporter
       objectReference: {fileID: 0}
     - target: {fileID: 8895638922877278920, guid: b769070042b779047a5a18986798bed0, type: 3}
       propertyPath: m_Mesh
@@ -42271,7 +42366,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-66932
+  m_Name: pb_Mesh-86212
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
