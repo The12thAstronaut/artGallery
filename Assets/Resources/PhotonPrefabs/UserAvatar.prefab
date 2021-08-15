@@ -165,10 +165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a47487864ce314f8a7ec06725cf56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0
-  rotationSpeed: 0
+  movementSpeed: 5
+  rotationSpeed: 50
   jumpSpeed: 8
-  gravity: 1.62
+  gravity: 9.8
 --- !u!114 &1520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,13 +183,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterValue: 0
   usernameString: 
-  myUsername: {fileID: 0}
+  myUsername: {fileID: 311, guid: a1aa1ab47ba21574ab8c331ae288c9dd, type: 3}
   usernameText: {fileID: 0}
-  userOxygen: 0
-  userEnergy: 0
-  EMU: {fileID: 0}
-  myCamera: {fileID: 0}
-  myAL: {fileID: 0}
+  userOxygen: 100
+  userEnergy: 30
+  EMU: {fileID: 2943028198969941813, guid: 9d10ffe798248804389275ea31f09fab, type: 3}
+  myCamera: {fileID: 1176}
+  myAL: {fileID: 1423}
   animator: {fileID: 0}
 --- !u!222 &1468
 CanvasRenderer:
