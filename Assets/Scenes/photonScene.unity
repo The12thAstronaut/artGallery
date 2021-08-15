@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1824.2383, g: 1894.3516, b: 2735.711, a: 1}
+  m_IndirectSpecularColor: {r: 1824.2383, g: 1894.3438, b: 2751.3398, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 100.93336, y: 0, z: 100.80419, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -18196,7 +18196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 531057483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dafd9900b6e6d1140808d557bf447c3f, type: 3}
+  m_Script: {fileID: 11500000, guid: e318113ff6e43954d811778cf5171d6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &531057486
@@ -18244,7 +18244,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 531057485}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
         m_MethodName: doExitGame
         m_Mode: 1
         m_Arguments:
@@ -19041,7 +19041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &589331812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19144,7 +19144,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 32.468445}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
