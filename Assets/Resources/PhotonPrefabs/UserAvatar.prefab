@@ -167,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   rotationSpeed: 50
-  jumpSpeed: 8
+  jumpSpeed: 30
   gravity: 9.8
 --- !u!114 &1520
 MonoBehaviour:
